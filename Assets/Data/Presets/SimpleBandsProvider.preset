@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SimpleBandsProvider
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 12de0800a15138844a39464297c3c6b2,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.size
+    value: 9
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[0]._name
+    value: Low Bass
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[0]._frequencyValue
+    value: 40
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[1]._name
+    value: Middle Bass
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[1]._frequencyValue
+    value: 80
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[2]._name
+    value: Upper Bass
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[2]._frequencyValue
+    value: 160
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[3]._name
+    value: Low Midrange
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[3]._frequencyValue
+    value: 320
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[4]._name
+    value: Middle Midrange
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[4]._frequencyValue
+    value: 640
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[5]._name
+    value: Upper Midrange
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[5]._frequencyValue
+    value: 1280
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[6]._name
+    value: Low Treble
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[6]._frequencyValue
+    value: 2560
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[7]._name
+    value: Middle Treble
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[7]._frequencyValue
+    value: 5120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[8]._name
+    value: Upper Treble
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _milestones.Array.data[8]._frequencyValue
+    value: 10200
+    objectReference: {fileID: 0}

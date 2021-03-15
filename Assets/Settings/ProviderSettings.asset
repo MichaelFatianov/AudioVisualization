@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47bcaea34cca39e4faeb1123811238a8, type: 3}
+  m_Name: ProviderSettings
+  m_EditorClassIdentifier: 
+  _bandsProvider:
+    _milestones:
+    - _name: Low Bass
+      _frequencyValue: 40
+    - _name: Middle Bass
+      _frequencyValue: 80
+    - _name: Upper Bass
+      _frequencyValue: 160
+    - _name: Low Midrange
+      _frequencyValue: 320
+    - _name: Middle Midrange
+      _frequencyValue: 640
+    - _name: Upper Midrange
+      _frequencyValue: 1280
+    - _name: Low Treble
+      _frequencyValue: 2560
+    - _name: Middle Treble
+      _frequencyValue: 5120
+    - _name: Upper Treble
+      _frequencyValue: 10200
+  _dynamicBandsProvider:
+    _bandsCount: 48
+    _bandSize: 0.7
+  _resolution: 1024
