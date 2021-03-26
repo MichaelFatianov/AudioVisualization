@@ -7,7 +7,9 @@ Features:
 - Dynamic and rigid diapasons providers
 
 # Demo
-https://www.youtube.com/watch?v=grpixQeeDiQ
+Click image to view video demonstration
+
+[![YouTube Demonstration](https://img.youtube.com/vi/grpixQeeDiQ/maxresdefault.jpg)](https://youtu.be/grpixQeeDiQ)
 
 # Music
 Bisou - Reloveolution (ft. Zaira Zen) - used for demonstrational reasons (Creative Common License)
