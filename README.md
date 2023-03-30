@@ -3,7 +3,7 @@ Unity project for audio data visualization
 
 Features:
 - A few customisable visualizers
-- Partly shader based visualization
+- Partly custom-shader based visualization
 - Dynamic and rigid diapasons providers
 
 # Demo
