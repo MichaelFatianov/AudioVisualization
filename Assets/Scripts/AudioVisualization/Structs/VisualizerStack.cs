@@ -9,13 +9,10 @@ namespace AudioVisualization.Structs
 	[Serializable]
 	public class VisualizerStack
 	{
-		[Space(10f)]
-		[SerializeField] private Visualizer _visualizer;
+		[Space(10f)] [SerializeField] private Visualizer _visualizer;
 		[SerializeField] private BandsProvider _bandsProvider;
-		[Space(25f)]
-		[SerializeField] private SpectrumDataProcessor _spectrumDataProcessor;
-		[Space(25f)]
-		private SpectrumBuffer _spectrumBuffer;
+		[Space(25f)] [SerializeField] private SpectrumDataProcessor _spectrumDataProcessor;
+		[Space(25f)] private SpectrumBuffer _spectrumBuffer;
 		[SerializeField] private bool _useClamp;
 		[SerializeField] private Vector2 _clamp;
 		[SerializeField] private BufferReductor _bufferReductor;
@@ -30,7 +27,11 @@ namespace AudioVisualization.Structs
 		{
 			_visualizer.Initialize();
 			_spectrumDataProcessor.Initialize(_bandsProvider.GetBands(resolution));
-			_spectrumBuffer = new SpectrumBuffer(_spectrumDataProcessor.BandedSpectrumData.Length, _bufferReductor,_clamp,_useClamp);
+			_spectrumBuffer = new SpectrumBuffer(
+				_spectrumDataProcessor.BandedSpectrumData.Length, 
+				_bufferReductor,
+				_clamp,
+				_useClamp);
 		}
 	}
 }

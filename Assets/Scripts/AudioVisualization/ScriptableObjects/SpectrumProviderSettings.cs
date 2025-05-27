@@ -8,9 +8,6 @@ namespace AudioVisualization.ScriptableObjects
 	{
 		[SerializeField] private SamplesResolution _resolution;
 
-		public SamplesResolution Resolution
-		{
-			get { return _resolution; }
-		}
+		public SamplesResolution Resolution => _resolution;
 	}
 }

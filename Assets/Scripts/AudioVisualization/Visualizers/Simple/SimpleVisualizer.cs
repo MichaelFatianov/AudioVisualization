@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace AudioVisualization
 {
-	public class SimpleVisualizer : Visualizer {
-
+	public class SimpleVisualizer : Visualizer
+	{
 		[SerializeField] private ItemSpawner _spawner;
 		[SerializeField] private SimpleItem _prefab;
 		[SerializeField] private float _multiplicator = 1;

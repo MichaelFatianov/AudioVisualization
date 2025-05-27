@@ -19,21 +19,21 @@ namespace Assets.Scripts.AudioVisualization.Tools
 			_bands = bands;
 			_bandedSpectrumData = new float[bands.Length];
 		}
-		
+
 		public float[] GetBandedSpectrumData(float[] spectrumData)
 		{
 			if (_bands == null || _spectrumMode == SpectrumMode.Raw)
 			{
 				return spectrumData;
 			}
-			
+
 			for (var i = 0; i < _bands.Length; i++)
 			{
 				var sum = 0f;
 				var count = 1;
-				
+
 				var band = _bands[i];
-				for (var j = band.Min ; j < band.Max; j++)
+				for (var j = band.Min; j < band.Max; j++)
 				{
 					sum += spectrumData[j] * count;
 					count++;
@@ -41,6 +41,7 @@ namespace Assets.Scripts.AudioVisualization.Tools
 
 				_bandedSpectrumData[i] = sum / count;
 			}
+
 			return _bandedSpectrumData;
 		}
 	}

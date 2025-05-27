@@ -9,20 +9,9 @@ namespace AudioVisualization.Structs
 		private readonly int _min;
 		private readonly int _max;
 
-		public int Max
-		{
-			get { return _max; }
-		}
-
-		public int Min
-		{
-			get { return _min; }
-		}
-
-		public float Range
-		{
-			get { return _max - _min; }
-		}
+		public int Max => _max;
+		public int Min => _min;
+		public float Range => _max - _min;
 
 		public FrequencyBand(int min, int max)
 		{

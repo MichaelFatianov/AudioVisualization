@@ -3,8 +3,8 @@ using UnityEngine;
 
 namespace AudioVisualization
 {
-	public class InflateVisualizer : Visualizer {
-
+	public class InflateVisualizer : Visualizer
+	{
 		[SerializeField] private InflatedItem[] _items;
 		[SerializeField] private float _multiplicator = 1;
 		[SerializeField] private float _minimalSize = 1;
@@ -31,12 +31,12 @@ namespace AudioVisualization
 
 		public override void Visualize(float[] samplesData)
 		{
-			for (var i = 0; i < _items.Length; i++)
+			foreach (var item in _items)
 			{
 				var colorRampValue = samplesData[_band] * _multiplicator;
 				var scaleValue = colorRampValue + _minimalSize;
-				_items[i].SetColor(colorRampValue);
-				_items[i].transform.localScale = new Vector3(scaleValue, scaleValue, scaleValue);
+				item.SetColor(colorRampValue);
+				item.transform.localScale = Vector3.one * scaleValue;
 			}
 		}
 	}

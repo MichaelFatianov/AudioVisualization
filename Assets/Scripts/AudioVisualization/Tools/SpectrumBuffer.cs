@@ -15,7 +15,6 @@ namespace AudioVisualization
 		private readonly bool _useClamp;
 		private readonly float[] _bufferedSpectrum;
 		private readonly float[] _decreaseValue;
-		
 
 		public SpectrumBuffer(int bufferSize, BufferReductor bufferReductor, Vector2 clamp, bool useClamp)
 		{
@@ -26,10 +25,7 @@ namespace AudioVisualization
 			_decreaseValue = new float[bufferSize];
 		}
 
-		public float[] BufferedSpectrum
-		{
-			get { return _bufferedSpectrum; }
-		}
+		public float[] BufferedSpectrum => _bufferedSpectrum;
 
 		public float[] Buffer(IList<float> spectrumData)
 		{
@@ -48,7 +44,8 @@ namespace AudioVisualization
 				}
 				else
 				{
-					BufferedSpectrum[i] = BufferedSpectrum[i] - _decreaseValue[i] < 0f ? 0f : BufferedSpectrum[i] - _decreaseValue[i];
+					BufferedSpectrum[i] = BufferedSpectrum[i] - _decreaseValue[i] < 0f ? 
+						0f : BufferedSpectrum[i] - _decreaseValue[i];
 					_decreaseValue[i] *= _bufferReductor.ReduceValueMultiplicator;
 				}
 			}

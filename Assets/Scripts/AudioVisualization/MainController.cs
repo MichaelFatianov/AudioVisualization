@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace AudioVisualization
 {
-	public class MainController:MonoBehaviour
+	public class MainController : MonoBehaviour
 	{
 		[SerializeField] private SpectrumProvider _provider;
 		[SerializeField] private VisualizerStack[] _visualizerStacks;
@@ -19,16 +19,14 @@ namespace AudioVisualization
 			foreach (var visualizerStack in _visualizerStacks)
 			{
 				visualizerStack.Initialize(_provider.Resolution);
-				
 			}
-			
+
 			foreach (var visualizerStack in _visualizerStacks)
 			{
-				
 				Debug.Log(visualizerStack.SpectrumBuffer);
 			}
 		}
-		
+
 		private void Update()
 		{
 			VisualizeData(_provider.RawSpectrumData);

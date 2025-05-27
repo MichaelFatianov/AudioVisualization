@@ -11,16 +11,8 @@ namespace AudioVisualization.Tools
 		[Range(21, 19999)]
 		[SerializeField] private int _frequencyValue;
 
-
-		public int FrequencyValue
-		{
-			get { return _frequencyValue; }
-		}
-
-		public string Name
-		{
-			get { return _name; }
-		}
+		public int FrequencyValue => _frequencyValue;
+		public string Name => _name;
 
 		public FrequencyMilestone(string name, int value)
 		{

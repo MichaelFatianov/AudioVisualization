@@ -4,7 +4,7 @@ using UnityEngine;
 namespace AudioVisualization.Tools
 {
 	[RequireComponent(typeof(AudioSource))]
-	public class SpectrumProvider: MonoBehaviour
+	public class SpectrumProvider : MonoBehaviour
 	{
 		[SerializeField] private SamplesResolution _resolution;
 		public SamplesResolution Resolution => _resolution;
@@ -23,7 +23,7 @@ namespace AudioVisualization.Tools
 		{
 			GetRawSpectrumData();
 		}
-		
+
 		private void GetRawSpectrumData()
 		{
 			_source.GetSpectrumData(RawSpectrumData, 0, FFTWindow.Blackman);
